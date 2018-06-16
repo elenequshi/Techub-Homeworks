@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .parent{
+    border: 1px solid black;
+    width: 700px;
+    margin: 0px auto;;
+
+  }
+  .top{
+    height: 150px;
+    
+  }
+  
+  .body{
+    border-top: 1px solid black;
+    height: 300px;
+  }
+  .col{
+    float: left;
+    height: 300px;
+    width: 33.3333%;
+    border-right: 1px solid black;
+  }
+  .last{
+    border: none;
+  }
+  .bottom {
+      border-top:1px solid black;
+      height:200px;
+  }
+  
+  

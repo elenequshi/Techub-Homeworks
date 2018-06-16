@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wr::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.left, .center, .right{
+    float: left;
+    padding: 10px;
+}
+
+
+
+.left{
+    width: 20%;
+    padding-left: 25px;
+}
+h1.header1{
+    margin: 15px 0;
+}
+.center{
+    width: 60%;
+    padding: 0 10px;
+}
+.center p{
+    margin-bottom: 20px;
+}
+.right{
+    width: 20%;
+}
+
+footer
+{
+    background-color:green;
+    height:60px;
+    color:white;
+
+}

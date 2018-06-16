@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .parent{
+    width: 600px;
+    height: 600px;
+    margin: 10px;
+  }
+  
+  .top{
+  }
+  .top::after, .middle::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .top .top-left{
+    float: left;
+    width: 25%;
+    height: 150px;
+    border: 1px solid black;
+    border-right: none;
+  }
+  .top .top-right{
+    float: left;
+    width: 75%;
+    height: 150px;
+    border: 1px solid black;
+  }
+  
+  
+  
+  
+  
+  
+  .middle{
+    border: 1px solid black;
+    border-top: none;
+  }
+  
+  .t{
+    height: 150px;
+    border-top: 1px solid black;
+  }
+  
+  .col{
+    float: left;
+    height: 200px;
+  }
+  
+  .left, .right{
+    width: 25%;
+  }
+  .left{
+    border-right: 1px solid black;
+  }
+  .mid{
+    width: 50%;
+    
+    border-right: 1px solid black;
+  }
+  
+  .bottom{
+    height: 150px;
+    border: 1px solid black;
+    border-top: none;
+  }
+  
+  
+  
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .parent{
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
+  }
+  
+  .top{
+  }
+  .top::after, .middle::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .top .top-left{
+    float: left;
+    width: 25%;
+    height: 150px;
+    border: 1px solid black;
+    border-right: none;
+  }
+  .top .top-right{
+    float: left;
+    width: 75%;
+    height: 150px;
+    border: 1px solid black;
+  }
+  
+  
+  
+  
+  
+  
+  .middle{
+    border: 1px solid black;
+    border-top: none;
+  }
+  
+  .t{
+    height: 150px;
+    border-top: 1px solid black;
+  }
+  
+  .col{
+    float: left;
+    height: 200px;
+  }
+  
+  .left, .right{
+    width: 25%;
+  }
+  .left{
+    border-right: 1px solid black;
+  }
+  .mid{
+    width: 50%;
+    
+    border-right: 1px solid black;
+  }
+  
+  .bottom{
+    height: 150px;
+    border: 1px solid black;
+    border-top: none;
+  }
+  
+  .rect{
+    height: 50px;
+    border-bottom: 1px solid black;
+  }
+  
+  
+  
+  
