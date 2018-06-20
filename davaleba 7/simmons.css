@@ -400,7 +400,8 @@ hr{
 	 margin-bottom:40px;
 }
 small {
-margin-left:400px;
+display:block;
+text-align:center;
 font-weight:bold;
 color:rgb(155, 148, 148);
 }
