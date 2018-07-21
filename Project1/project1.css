@@ -1,0 +1,232 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ 
+/* This div is parent of .left and .right divs */
+#parent {
+    width:100%;
+    height:100vh;
+    display:flex;
+   
+}
+
+/* This div is placed on the left side . It consists statistic information */
+.left {
+    background-color: #e8491d;
+    width:25%;
+}
+
+/* This div is placed on the right side . It consists buttons and students div */
+.right {
+    background-color: #35424a;
+    width:75%;
+}
+
+/* This header(h1) is  title  of statistic div */
+.header {
+    color:#35424a;
+    font-size:40px;
+    margin:12px 0px 28px 0px;
+}
+
+/* These are divs where is written information(result) of missed lessons,total days,average mark... */
+.TotDays, .MissLess, .AverMark, .TotStud {
+    border:1px solid black;
+    background-color:#35424a;
+    border-radius:5px;
+    width:80%;
+    padding:16px;
+    text-align: center;
+    color:pink;
+    font-size:25px;
+    margin: 10px auto;
+
+} 
+
+/* This footer is placed on the left side.Inside it is written author */
+footer { 
+    margin-top:12%;;
+    clear:both;
+    color: #35424a;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* It is header of footer */
+footer h3 {
+    margin-bottom:10px;
+}
+
+/* This div is placed on the right side and inside it are buttons */
+.btnTable {
+    width:95%;
+    margin:2% 0% 0% 5%;
+    height:10vh;
+    background-color:#e8491d;
+    border-radius:3px;
+    color:#35424a;
+    display:flex;
+    justify-content: space-around;
+}
+
+/* This is header of button div */
+.btnTable h1 {
+    font-size:40px;
+    margin-top:4px;
+    float:left; 
+}
+
+/* These are buttons:add,remove and update */
+button {
+    padding: 12px 16px;
+    font-size: 12px;
+    margin:auto 0px;
+    background-color:#35424a;
+    border:none;
+    color:pink;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Icons in button */
+i {
+   color:#e8491d;
+}
+
+/* This is students div.On this div are placed students list column,average column and created day divs*/
+.studTable {
+    margin-left:5%;
+    display:flex;
+    flex-direction: row;
+
+}
+
+/* These are column divs */
+.studList , .average, .day{
+    text-align: center;
+    color:#35424a;
+    
+}
+
+/* These are classes of studList and average child divs */
+.name , .ave  {
+    height:5vh;
+    background-color:pink;
+    font-size:15px;
+    color:#35424a;
+    border:2px solid #35424a;
+
+}
+
+/* These are the first divs(titles) in column  */
+.average div:first-child , .studList div:first-child , .day div:first-child {
+    font-size:15px;
+    color:#35424a;
+    font-weight:bolder;
+    background-color:rgb(253, 174, 187);
+}
+
+/* This is a div. In it is written date  */
+.numForTitle {
+    height:5vh;
+    width:70px;
+    background-color:red;
+    font-size:18px;
+    color:#35424a;
+    border:2px solid #35424a; 
+}
+
+/* These are divs which is created in javascript named score and it's class is num. In this div we are able to input scores*/
+.num {
+    height:5vh;
+    width:70px;
+    background-color:red;
+    font-size:18px;
+    color:#35424a;
+    border:2px solid #35424a;
+
+}
+/* This is a div which consists created child divs named:scoreDiv and class name:day */
+.forAddColumn {
+     width:75%; 
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+/* This is responsive for tablet */
+@media all and (min-width:520px) and (max-width: 860px) {
+
+    #parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .left , .right {
+        width: 100%;
+    }
+    .name {
+         width: 200px;
+    }
+    footer { 
+        margin-top:10%;;
+       
+    }
+    .studTable  , .btnTable{
+        margin-left:0%;
+        
+    }
+    .btnTable{
+        width:100%;
+    }
+}
+
+/* This is responsive for mobile */
+@media all and (max-width: 519px) {
+    .TotDays, .MissLess, .AverMark, .TotStud {
+         border:1px solid hotpink; 
+        background-color:pink;
+        border-radius:10px;
+         padding:12px; 
+        color:#35424a;
+    }
+    .left {
+        background-color: black;
+    }
+    .statistic h1 {
+        color:hotpink;
+    }
+    .btnTable {
+        width: 100%;
+        height:300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        align-items: center;  
+        background-color: pink;
+
+    }
+    button {
+        width:200px;
+    }
+    .studTable {
+        margin-left: 0%;
+
+    }
+    #parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .left , .right {
+        width: 100%;
+    }
+    .name {
+        width: 150px;
+    }
+    footer {
+        color:rgb(250, 210, 216);
+    }
+   
+}

@@ -1,0 +1,20 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrapper {
+      border:1px solid black;
+    width:600px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+     grid-template-rows: repeat(6,1fr);  
+     margin:auto;
+}
+
+
+.n1{
+   height:100px;
+   width: 100px;
+   border:1px solid black;
+}

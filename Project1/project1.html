@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Student management system </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="project1.css">
+</head>
+
+<body>
+
+    <div id="parent">  <!-- This div is parent(container) div of left and right divs-->
+
+        <div class="left"> <!-- This div is placed on the left side of the page and it is parent of 'statistic' div and footer-->
+
+            <div class="statistic"> <!-- In this div are placed one header and four divs where are written Statistical information-->
+
+                <h1 class="header"> Statistic of Students Results </h1>
+                <div class="TotDays"> Total Days:
+                    <span class="numday"> 0 </span> <!-- In this span will be written number of added days-->
+                </div>
+                <div class="MissLess"> Missed Lessons: 
+                    <span class="numless"> 0 </span>  <!-- In this span will be written number of missed lessons-->
+                </div>
+                <div class="AverMark"> Average Mark:
+                    <span class="numaver"> 0 </span>  <!-- In this span will be written number of total average-->
+                </div>
+                <div class="TotStud"> Total Students:
+                    <span class="numstud"> 15 </span> <!-- There is written number of students -->
+                </div>
+
+            </div>
+
+            <footer> 
+                <h3> Author </h3>
+                <p> 2018 &copy; Elene Kushi</p>
+            </footer>
+
+        </div>
+
+
+        <div class="right">  <!-- This div is placed on the right side of the page and it consists button an students table -->
+
+            <div class="btnTable"> <!-- In this div are places three button -->
+
+                <h1> Table </h1>
+                <button class="btn1">
+                    <i class="fas fa-plus-circle"></i> Add day </button> <!-- with this button will be added days-->
+                <button class="btn2">
+                    <i class="fas fa-trash"></i> Remove day </button> <!-- with this button will be deleted days-->
+                <button class="btn3">
+                    <i class="fa fa-refresh fa-spin"></i> Update Table </button> <!-- with this button will be refreshed days-->
+
+            </div>
+
+            <div class="studTable"> <!-- It is a main div where are placed studens list,average and -->
+
+                <div class="studList"> <!-- This div includes 15 child divs,where is written students name and surname-->
+
+                    <div class="name"> Students List</div>
+                    <div class="name"> Elene Kushi </div>
+                    <div class="name"> Temo Kiknadze </div>
+                    <div class="name"> Salome Babukhadze </div>
+                    <div class="name"> Gocha Tsekvava </div>
+                    <div class="name"> Mari Jananashvili </div>
+                    <div class="name"> Ana Kurtsikashvili </div>
+                    <div class="name"> Boris Badashvili </div>
+                    <div class="name"> Dato Qarseladze </div>
+                    <div class="name"> Grigol Tchkoidze </div>
+                    <div class="name"> Mariam Bokeria </div>
+                    <div class="name"> Saba Mamasakhlisi </div>
+                    <div class="name"> Sandro Akhvlediani </div>
+                    <div class="name"> Tea Silagava </div>
+                    <div class="name"> Tornike Zarnadze </div>
+                    <div class="name"> Nino Durdiadze </div>
+
+                </div>
+
+                <div class="average"> <!-- This div includes 15 child divs,where will be written average scores of each students-->
+
+                    <div class="ave"> Average </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                    <div class="ave"> 0 </div>
+                </div>
+
+                <div class="forAddColumn"> </div> <!--This div is for adding days with adding button and consists created adding 'day' divs-->
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <script src="project1.js"> </script>
+</body>
+
+</html>

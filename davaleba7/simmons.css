@@ -223,7 +223,7 @@ a:link, a:visited {
 	 background-color:rgb(82, 194, 7);
 	 width:88%;
 	 height:120px;
-	 margin:70px auto;
+	 margin:0px auto;
 	 margin-bottom:20px;
 	 color:white;
 	 display:flex;
@@ -400,8 +400,7 @@ hr{
 	 margin-bottom:40px;
 }
 small {
-display:block;
-text-align:center;
+margin-left:400px;
 font-weight:bold;
 color:rgb(155, 148, 148);
 }
