@@ -1,116 +1,67 @@
-"use strict";
-const COLOR_GREEN = '#0f0';
-const COLOR_ORANGE = '#ff7f00'; // constantas cvladebi iwereba didi asoebit standartulad egre weren da jobs
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Elene's Webpage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">ELENE's</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-//    debbuger;
-//    alert("Hello World!..."); ubralod shetkobineba gamoaqvs
-//    confirm("Are you okay"); es dadasturebis shetkobineba an ok da cancel gamoaqvs
-// prompt("Enter number:"); es chaweras gvtxovs shignit ramis
-//  javascriptshi arsheidzleba rom cvladebi iwkebodes ricxvebit : 3da .... ese sheidzleba ukve _3da....
-//camelCase 
-//  alert("Hello World!..."); 
-//ASi
-// alert("1");
-// alert("2");
-//  var,let,const cvladebi
-// let message;
-// message="my mesaage";
-// console.log(message); /*aletis nacvlas jobs gamovikenot console.log-i* |(console-s ro gavxnsit iq chans */
-// let user = 'John' , age = 33; /*araqvs mnishvneloba ert frchxils dauwer tu ors  */
-// console.log(message, user,age); /*console.warn(message, user,age); ese warn-itac sheidzleboda */
-// num = 13;
-// console.log(num);
-/*var num =15;
-{
-    var num= 17;
-    console.log(num);
-}
-console.log(num); 
-*/ 
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div>
+    </section>
 
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Example: elequshi@gmail.com">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
 
-/*let num =15;
-{
-    var num= 17;
-    console.log(num);
-}
-console.log(num);  */ //ese error ia imito ro let da mere var 
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="logo_html.png">
+          <h3>HTML5 Markup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="logo_css.png">
+          <h3>CSS3 Styling</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="logo_brush.png">
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+      </div>
+    </section>
 
- /* let num =15;
- {
-     num = 17;
-     console.log(num);
- }
- console.log(num);  */
- let foo = 99;
- console.log( typeof foo ); // eseni daweren consoleshi tipebs aq amoagdebs number 
- foo = "bar";
- console.log( typeof foo ); //  aq string 
- foo = true;
- console.log( typeof foo ); // aq boolean 
- foo = undefined;
- console.log(typeof foo); // aq undefined
-
- console.log(1 / 0); // aq dawers usasurolobas infinity-s
- console.log("number" * 2); //isNaN()
- let number = 7;
- console.log(number+5*2); // gamoitans 17s anu 7 + 10
-
-
- let age = 13;
- let message = "sheni asakia: " + age;
- console.log(message);
-  message = `sheni asakia: ${age}` ; // es varianti jobs ese vwerot xolme 
-  console.log(message);
-  
-  /* let name = "Dan";
-  alert(`hello ${name + 1}`); //aq gamoitans hello name1 konkatenacia moxda 
-  alert(`hello ${"name"}`); // aq gamoitans hello name...
-  alert("hello ${name}");  //aq gamoitans hello ${name}
-  alert('hello ${"name"}'); // aq gamolitans hello ${"name"} */
-  
-  /*  
-  let checked = false;
-  let isValid = true;
-  let isGreater = 5 > 6; // esnei bool tipebisaa   */
-
- // '3' * 2  gamotans 6s 
- // '1' + 2 gamoitansa 12-s
- // 1 + 2 + '2' aq 32-s
- // 1+ 2 + '2' + 5 + 7 aq 3257 ... ro shexvdbea stirngi mer eukve agar umatebs
- 
- 
- /*let k = '123d';
- n = parseInt(k); aq gamoitans 123 asos agar anu rac int tipisaa imas amokrebs  */
-
-
-/* let admin;
-        let name;
-        name = "John";
-        admin=name;
-        alert(admin);  */
-        
-     /*  age =  prompt("tqveni asaki?");
-       console.log(age);
-       age =  prompt("tqveni asaki?");
-       console.log(typeof age); // string
-       age =  parseInt(prompt("tqveni asaki?"));
-       console.log( typeof age);
-
-
-       let isOkay = confirm("kargad xar?");
-       console.log(isOkay); // tu oks mivcem gamomitans trues tu cancel mashin false  */
-
-       console.log(5/2); // 2.5
-       console.log(parseInt(5/2)); //2 
-
-       console.log(5%2); //1
-
-       console.log(Math.round(5/2)); //amrgvalebs matematikurad, cell-amrgvalebs amaglebit
-       console.log(Math.floor(5/2)); //floor-amrgvalebs dadablebit
-       
-
-       console.log(2**3); //es aris axarisxeba- **
-
-
+    <footer>
+      <p> Elene Qushi, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>
 
