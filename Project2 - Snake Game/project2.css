@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 226, 33);
+}
+
+#myCanvas {
+    margin: auto;
+    display:block;
+    margin-top:40px;
+    border: 2px solid rgb(33, 226, 33);
+    background-color:rgb(33, 226, 33);
+}
+
+#parent {
+    display:flex;
+}
+
+.left {
+    background-color: rgb(33, 226, 33);
+    width:30%;
+}
+
+.right {
+    background-color: black;
+    width:70%;
+}
+
+.level {
+    height:10vh;
+    text-align: center;
+    margin-top:6vh;
+    display:flex;  
+    justify-content: space-around;  
+}
+
+.header2 {
+    color:black;
+    text-align: center;
+    margin-top:5vh;
+    font-weight:900;
+}
+
+button {
+    padding: 12px 15px; 
+    margin:auto; 
+    background-color: black;
+    border:none;
+    color:rgb(33, 226, 33);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color:rgb(46, 45, 45);
+}
+
+.menu {
+    height:70vh;
+}
+
+.header1 {
+    text-align: center;
+    padding-top:2vh;
+    padding-bottom: 1vh;
+}
+
+h3 {
+    margin:2vh 0;
+}
+
+input {
+    border:2px solid black;
+    height: 22px;
+}
+
+input:hover {
+    border: 2px solid grey;
+}
+
+.start {
+    margin:auto;
+    margin-top:30px;
+    display:block;
+}
+
+.scoreDiv {
+    margin-top:20px;
+    color:rgb(33, 226, 33);
+    text-align: center;
+}
+
+.scoreDiv h2 {
+    margin-bottom: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer { 
+    margin-top:12%;;
+    clear:both;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Snake Game </title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+
+<body>
+
+    <div id="parent">
+
+        <div class="left">
+
+            <h2 class="header2"> Choose level: </h2>
+            <div class="level">
+                <button class="btn1"> Novice </button>
+                <div class="novice-Range hidden">
+                    Enter a value from 21 to 30:
+                    <input value="21" type="number" class="novicevalue  speed" placeholder="Min: 21, max: 30" min="22" max="30" />
+                    <span class="validity"></span>
+                </div>
+
+                <button class="btn2"> Intermediate </button>
+                <div class="intermadiate-Range hidden">
+                    Enter a value from 11 to 20:
+                    <input value="11" type="number" class="intermediatevalue  speed " placeholder="Min: 11, max: 20" min="11" max="20" />
+                    <span class="validity"></span>
+                </div>
+
+                <button class="btn3"> Hard </button>
+                <div class="hard-Range hidden">
+                    Enter a value from 5 to 10:
+                    <input value="5" type="number" class="hardvalue  speed" placeholder="Min: 5, max: 10" min="5" max="10" />
+                    <span class="validity"></span>
+                </div>
+
+            </div>
+
+            <div class="menu">
+                <h1 class="header1"> Menu </h1>
+                <h3> Board size : </h3>
+                <input type="number" class="boardWidth" placeholder="Enter Width" min="0">
+                <br>
+                <br>
+                <input type="number" class="boardHeight" placeholder="Enter Height" min="0">
+
+                <h3> number of apples on the screen : </h3>
+                <input type="number" class="appleNum" min="0">
+
+                <h3> initial length of the snake : </h3>
+                <input type="number" class="length" min="0">
+
+
+                <button class="start"> Start Game</button>
+                <footer>
+                    <h3> Author </h3>
+                    <p> 2018 &copy; Elene Kushi</p>
+                </footer>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="right">
+
+            <div class="scoreDiv">
+                <h2> Score:
+                    <span class="score"> 0 </span>
+                </h2>
+                <h2> Highest score :
+                    <span class="highScore"> 0 </span>
+                </h2>
+            </div>
+
+            <canvas id="myCanvas" width="400" height="400"> </canvas>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="project2.js"> </script>
+
+</body>
+
+</html>
