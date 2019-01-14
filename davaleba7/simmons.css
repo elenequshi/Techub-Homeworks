@@ -1,17 +1,3 @@
-/* 
- * Colors
- * 
- * Dark gray		#34383c
- * medium gray		#81858a
- * purple			#620e6e
- * blue				#4385c1
- * light blue		#9ac9f4
- * darker blue		#043867
- * darkest blue	#002342
- * blue tint		#e7ecf0
- * green				#7aa120
- */
-
 * {
 	margin:0;
 	padding:0;
@@ -107,16 +93,21 @@ a:link, a:visited {
 	margin-left:20px;
 }
 
+#quick-nav ul {
+display: flex;
+flex-direction: row;
+}
+
 #quick-nav li {
-	float:left;
 	padding-top:65px;
 	list-style-type: none;
-	
 }
+
 #quick-nav a {
 	font-size:18px;
 	
 }
+
 #quick-nav li:last-of-type {
 	border: none;
 }
@@ -124,15 +115,19 @@ a:link, a:visited {
 #quick-nav a:link, #quick-nav a:visited {
 	color: white;	
 }
+
 #quick-nav a:hover, #quick-nav a:focus, #quick-nav a:active {
 	color: #9ac9f4;
 }
+
 #utilities-nav {
 	flex:1;
 }
+
 .utilities div:first-child {
 	margin-left:70px;
 }
+
 .utilities div:last-child {
 	margin-left: -50px;
 }
@@ -148,9 +143,8 @@ a:link, a:visited {
 
 	
 }
-
-#main-nav li:hover {
-	background-color: #002342;
+#main-nav a:hover {
+	color: #5ea6e9;
 }
 
 #main-nav  a {
@@ -160,18 +154,23 @@ a:link, a:visited {
     margin:0 20px;
 }
 
-#main-nav li {
-	list-style-type: none;
-	float:left;
-	text-align:center;
-    border-right: 1px solid #4385c1;
-    padding: 20px;
+#main-nav ul {
+	display: flex;
+	width:90%;
+	margin: auto;
+	justify-content: space-evenly;
 
 }
 
+#main-nav li {
+	list-style-type: none;
+	text-align:center;
+    border-right: 1px solid #4385c1;
+    padding: 20px;
+}
+
 #main-nav li:first-child {
-	margin-left:85px;
-	border-left:1px solid #4385c1;;
+	border-left:1px solid #4385c1;
 }
 
 #full-nav a:link, #full-nav a:visited {
@@ -391,16 +390,19 @@ div.wrap:hover {
 .red li {
 font-weight:bold;
 }
+
 hr{
-	width:90%;
-	background-color: rgb(155, 148, 148);
-	 height: 2px; 
-	 margin-left:50px;
-	 border:none;
-	 margin-bottom:40px;
+width:90%;
+background-color: rgb(155, 148, 148);
+height: 2px; 
+margin:auto;
+border:none;
+margin-bottom:40px;
 }
-small {
-margin-left:400px;
+
+.small {
+width:40%;
+margin:auto;
 font-weight:bold;
 color:rgb(155, 148, 148);
 }
